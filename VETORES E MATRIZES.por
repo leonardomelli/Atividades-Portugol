@@ -1,4 +1,4 @@
-//ATIVIDADE – Lógica de Programação
+//ATIVIDADE â€“ LÃ³gica de ProgramaÃ§Ã£o
 //VETORES E MATRIZES
 
 //ATIVIDADE 1:
@@ -25,7 +25,7 @@ programa {
       escreva("\n Vetor:")
       para(inteiro i = 0; i<10; i++)
       {
-          escreva("\n Posição ", i + 1, " = ", vetorInteiro[i])
+          escreva("\n PosiÃ§Ã£o ", i + 1, " = ", vetorInteiro[i])
 
       }
    
@@ -74,7 +74,7 @@ programa
         media = soma / 10.0
 
         escreva("Soma: \n" + soma + "\n")
-        escreva("Média: \n" + media + "\n")
+        escreva("MÃ©dia: \n" + media + "\n")
 
         para(inteiro a = 0; a < 5; a++)
       {
@@ -86,7 +86,7 @@ programa
 
       para(inteiro b = 0; b < 5; b++)
       {
-          escreva("\n Elementos nos índices ímpares: ", impares[b])
+          escreva("\n Elementos nos Ã­ndices Ã­mpares: ", impares[b])
 
       }
 
@@ -126,7 +126,7 @@ programa
 
          escreva("\n")
 
-          escreva("\nElementos da Diagonal Secundária: \n")
+          escreva("\nElementos da Diagonal SecundÃ¡ria: \n")
          para(inteiro a = 0; a<3; a++)
         {
             
@@ -138,7 +138,7 @@ programa
 
          escreva("\n")
          escreva("Soma dos Elementos da Diagonal Principal: ", soma, "\n")  
-         escreva("Soma dos Elementos da Diagonal Secundário: ", soma2, "\n")
+         escreva("Soma dos Elementos da Diagonal SecundÃ¡rio: ", soma2, "\n")
      }
      }
 
@@ -147,8 +147,46 @@ programa
   }
 }
 
+
 //ATIVIDADE 4
 
-//Carregando
+programa 
+{
+  inclua biblioteca Matematica --> mat
+  funcao inicio()
+   {
+        real notas[10][4]
+        real media[10]
+        real soma = 0
+       
+
+        para(inteiro a = 0; a<10; a++)
+       { 
+          para(inteiro b = 0; b<4; b++)
+          {
+              escreva("Informe o valor da ","nota ", a + 1," do bimestre ",b + 1,":")
+              leia(notas[a][b])
+              soma += notas[a][b]
+             
+            
+          }
+            media[a] = (soma / 4)
+            soma = 0
+             
+        }
+           escreva("MÃ©dia: \n")
+          para(inteiro a = 0; a<10; a++)
+          {
+           escreva("[ ",media[a],"]  ")
+              
+          }
+
+
+
+  }
+}
+
+
+
 
 
